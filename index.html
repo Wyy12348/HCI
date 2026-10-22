@@ -4,101 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>银龄守护组｜独居老人健康照护项目</title>
+    <!-- 图标库 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: "Microsoft Yahei", sans‑serif;
+            font-family: "Microsoft Yahei", "PingFang SC", sans-serif;
+        }
+        html {
+            scroll-behavior: smooth; /* 平滑滚动 */
         }
         body {
-            background-color: #f7f9fc;
-            color: #333;
-            line‑height: 1.7;
+            background-color: #f6f8fa;
+            color: #334155;
+            line-height: 1.75;
         }
+        /* 顶部头图横幅 */
         header {
-            background:#2c4d75;
-            color:white;
-            padding:40px 20px;
-            text‑align:center;
+            background: linear-gradient(135deg, #345b8c, #4a7cb8);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-        .container{
-            max‑width:900px;
-            margin:40px auto;
-            padding:0 24px;
+        /* 装饰小圆点背景 */
+        header::before {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+            top: -120px;
+            right: -80px;
         }
-        .card{
-            background:#ffffff;
-            padding:32px;
-            margin‑bottom:28px;
-            border‑radius:12px;
-            box‑shadow: 0 2px 12px rgba(0,0,0,0.08);
+        header::after {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+            bottom: -60px;
+            left: 10%;
         }
-        h2{
-            color:#2c4d75;
-            margin‑bottom:16px;
-            padding‑bottom:8px;
-            border‑bottom:2px solid #e2e8f0;
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
         }
-        ul{
-            padding‑left:22px;
-            margin‑top:10px;
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
         }
-        footer{
-            text‑align:center;
-            padding:24px;
-            color:#666;
-            font‑size:14px;
+        .container {
+            max-width: 920px;
+            margin: 50px auto;
+            padding: 0 24px;
+        }
+        .card {
+            background: #ffffff;
+            padding: 36px;
+            margin-bottom: 32px;
+            border-radius: 16px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+        }
+        h2 {
+            color: #345b8c;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8edf4;
+        }
+        h3 {
+            color: #476b99;
+            margin: 20px 0 10px;
+            font-size: 1.15rem;
+        }
+        ul {
+            padding-left: 26px;
+            margin-top: 10px;
+        }
+        li {
+            margin: 6px 0;
+        }
+        .divider {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg,#4a7cb8,#78a6d8);
+            border-radius: 3px;
+            margin: 40px auto;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #718096;
+            font-size: 0.9rem;
+            background: #edf2f9;
+            margin-top: 20px;
+        }
+        .icon-blue {
+            color:#4a7cb8;
         }
     </style>
 </head>
 <body>
 <header>
-    <h1>银龄守护组</h1>
-    <p>面向独居老人与家庭照护者的手环‑手机协同健康照护</p>
+    <h1><i class="fa fa-heartbeat"></i> 银龄守护组</h1>
+    <p>面向独居老人与家庭照护者的手环‑手机协同健康照护设计</p>
 </header>
+
 <div class="container">
     <div class="card">
-        <h2>1. 团队介绍</h2>
+        <h2><i class="fa fa-users icon-blue"></i> 1. 团队介绍</h2>
         <p><strong>组员：</strong></p>
         <ul>
             <li>王柳晴 202320130216</li>
             <li>李姿含 202320130203</li>
         </ul>
-        <p style="margin‑top:12px;">项目简述：本项目针对独居、白天缺少陪伴老人的健康监护需求，设计手环搭配手机APP的照护方案，兼顾老人自主生活与家属照护需求。</p>
+        <p style="margin-top:14px;">项目简述：本项目针对独居、白天缺少陪伴老人的健康监护需求，设计手环搭配手机APP的照护方案，兼顾老人自主生活与家属远程照护需求。</p>
     </div>
 
+    <div class="divider"></div>
+
     <div class="card">
-        <h2>2. 项目方案</h2>
+        <h2><i class="fa fa-lightbulb-o icon-blue"></i> 2. 项目方案</h2>
         <h3>现实痛点</h3>
-        <p>很多独居老人需要按时服药、测量血压，但记忆力、视听能力下降，容易忘记吃药、记不清是否完成健康任务。传统纸条、闹钟、电话提醒比较零散，提醒过多老人会麻木忽略。老人外出存在迷路风险；摔倒时常常拿不到手机求救，家属无法及时知晓险情。</p>
-        <p style="margin‑top:10px;">市面上老年手环硬件已经具备血压监测、跌倒检测、GPS定位，但配套APP操作复杂、字体小，充斥专业数据；部分照护家属本身也是中老年人，同样难以操作复杂软件。同时存在跌倒误报、老人缺少隐私管控权限等问题。</p>
+        <p>很多独居老人需要按时服药、测量血压，但记忆力、视听能力下降，容易忘记吃药、分不清是否已经完成健康任务。传统纸条、闹钟、电话提醒零散杂乱，反复提醒容易让老人麻木忽视。老人独自外出存在迷路风险；在家或户外摔倒时，常常无法及时拿到手机求救，家属难以第一时间收到险情通知。</p>
+        <p style="margin-top:12px;">市面上老年手环虽然支持血压监测、跌倒检测、GPS定位，但配套APP操作繁琐、字体偏小、充斥大量专业数据；不少照护家属本身也是中老年人，同样难以上手复杂软件。同时还存在跌倒误报频繁、老人缺少隐私管控权限等痛点。</p>
 
-        <h3 style="margin‑top:16px;">设计目标</h3>
-        <p>本项目不堆砌新增硬件功能，重点降低老人认知操作负担，实现可靠异常告警；同时平衡误报、老人隐私与自主选择权。选用手机APP作为载体，手环负责采集健康位置数据，支持多名亲属查看监护信息。</p>
+        <h3>设计目标</h3>
+        <p>本项目不堆砌冗余硬件功能，核心目标是降低老人的认知与操作负担，实现稳定可靠的异常告警通知；同时平衡误报问题、老人隐私保护与自主选择权。以手机APP作为家属端载体，手环负责采集健康与位置数据，支持多名亲属分级查看监护信息。</p>
     </div>
 
-    <div class="card">
-        <h2>3. 数据收集方案：访谈、问卷调研</h2>
-        <h3>调研目标</h3>
-        <p>通过半结构化访谈挖掘独居老人、照护家属真实生活经历、操作困难、隐私顾虑；使用问卷量化用户功能偏好、使用习惯，两种调研互为补充。</p>
+    <div class="divider"></div>
 
-        <h3 style="margin‑top:14px;">半结构化访谈</h3>
+    <div class="card">
+        <h2><i class="fa fa-clipboard-list icon-blue"></i> 3. 数据收集方案：访谈、问卷调研</h2>
+        <h3>调研目标</h3>
+        <p>通过半结构化访谈挖掘独居老人、照护家属真实生活经历、操作困难、隐私顾虑；再通过问卷量化用户功能偏好、使用习惯，两种调研方式互相补充，支撑后续需求分析。</p>
+
+        <h3>半结构化访谈</h3>
         <ul>
             <li>访谈对象：潜在目标用户，包含独居老人、承担照护工作的家属</li>
-            <li>访谈主题：日常服药血压流程与困难；外出、摔倒迷路等意外求助经历；提醒交互、误报感受、信息共享和隐私边界</li>
-            <li>伦理说明：访谈前知情同意，录音仅课程研究，全部信息去标识化，保护受访者隐私。</li>
+            <li>访谈主题：服药、测血压的日常流程与麻烦；独自外出、身体不适、摔倒迷路等意外求助场景；提醒交互方式、误报感受、信息共享边界与隐私顾虑</li>
+            <li>伦理说明：访谈前说明知情同意，录音仅课程研究使用，所有信息去标识化，保护受访者隐私。</li>
         </ul>
 
-        <h3 style="margin‑top:14px;">调查问卷</h3>
-        <p>面向60岁以上独居或白天经常独处老人，可由家属协助朗读填写。问卷匿名，仅用于课程需求分析。</p>
+        <h3>调查问卷</h3>
+        <p>面向60岁以上独居或白天经常独处的老人，可由家属协助朗读填写，问卷匿名，调研结果仅用于课程项目需求分析。</p>
         <ul>
-            <li>收集内容：基础人口信息、手机使用熟练度；服药测血压、意外事件发生频率；功能优先级、提醒偏好；位置与健康数据隐私态度。</li>
+            <li>收集内容：基础人口信息、手机设备熟练度；服药测血压、意外事件发生频率；功能优先级、提醒方式偏好；位置、健康信息共享与隐私权限态度。</li>
         </ul>
     </div>
 </div>
+
 <footer>
-    人机交互课程大作业 | 仅供课程学习使用
+    <i class="fa fa-book"></i> 人机交互课程大作业 | 仅供课程学习使用
 </footer>
 </body>
 </html>
